@@ -1,0 +1,22 @@
+{
+  "name": "dave",
+  "version": "1.0.0",
+  "description": "Test Application For Dave",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mittelman29/dave.git"
+  },
+  "author": "Michael Mittelman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mittelman29/dave/issues"
+  },
+  "homepage": "https://github.com/mittelman29/dave#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
