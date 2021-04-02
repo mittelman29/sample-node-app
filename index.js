@@ -1,5 +1,5 @@
 var mainRouter = require('./routes/routes');
-var auth = require('./controllers/authController');
+var auth = require('./middleware/authMiddleware');
 const express = require('express')
 const app = express()
 const port = 8080
