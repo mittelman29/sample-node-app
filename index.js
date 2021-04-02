@@ -1,10 +1,11 @@
 var mainRouter = require('./routes/routes');
-
+var auth = require('./controllers/authController');
 const express = require('express')
 const app = express()
 const port = 8080
 
 // Add Auth Middleware Here
+app.use((req, res, next) => auth.authenticate(req, res, next));
 
 // Add DB Connection Here
 
