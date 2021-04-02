@@ -1,12 +1,14 @@
 // Main Controller File
 //
 // Basic CRUD controllers for the dave widgets
+var db = require('../middleware/dbMiddleware');
 
 // 1. Summary Endpoint
 // 	METHOD: GET
 // 	ARGUMENTS: None
 // 	RETURN: List of Objects
 exports.summary = (req, res) => {
+	db.getDB();
 	res.send("Summary Controller");
 };
 
@@ -16,6 +18,7 @@ exports.summary = (req, res) => {
 // 		1. id - INT
 // 	RETURNS: Dave Object
 exports.detail = (req, res) => {
+	db.getDB();
 	res.send(`Detail Controller: ${req.params.id}`);
 };
 
@@ -27,6 +30,7 @@ exports.detail = (req, res) => {
 // 	RETURNS:
 //		1. DB Record ID - INT
 exports.create = (req, res) => {
+	db.getDB();
 	res.send("Create Controller");
 };
 
@@ -38,5 +42,6 @@ exports.create = (req, res) => {
 //		1. Success - 200
 //		2. Failure - 4xx or 5xx
 exports.delete = (req, res) => {
+	db.getDB();
 	res.send(`Delete Controller: ${req.params.id}`);
 };
