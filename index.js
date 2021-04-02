@@ -14,3 +14,5 @@ app.use('/', mainRouter);
 app.listen(port, () => {
 	console.log(`Dave is listening on port ${port}!`);
 });
+
+module.exports = app;
